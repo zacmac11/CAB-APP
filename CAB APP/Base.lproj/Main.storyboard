@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About CAB Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgQ-CH-7ua">
-                                <rect key="frame" x="122" y="66" width="130" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zachprofilepic" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-9Q-6u6">
                                 <rect key="frame" x="16" y="95" width="120" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,6 +72,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqC-tr-9lg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="bVb-ER-9bb">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" style="done" id="Bht-pW-N4b">
+                                            <connections>
+                                                <segue destination="EWQ-Nq-ejt" kind="show" id="BAh-qp-z4g"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9512124352155118" blue="0.52233040450100521" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="kLO-Ns-Efo"/>
@@ -142,6 +148,16 @@
                     <view key="view" contentMode="scaleToFill" id="fNh-Dm-aG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w3-2J-FQk">
+                                <rect key="frame" x="160" y="588" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <segue destination="kfs-nt-SH6" kind="show" id="IwU-cg-gsx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b8S-nF-fox"/>
                     </view>
@@ -149,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7l-IW-XfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="36.431784107946029"/>
+            <point key="canvasLocation" x="2391" y="32"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h9d-fu-WBe">
@@ -178,4 +194,7 @@
         <image name="Image 11-27-17 at 7.08 PM" width="750" height="750"/>
         <image name="zachprofilepic" width="640" height="640"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mpc-QP-fhK"/>
+    </inferredMetricsTieBreakers>
 </document>
