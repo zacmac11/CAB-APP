@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2017-12-15 at 11.25.18 AM" translatesAutoresizingMaskIntoConstraints="NO" id="vXZ-rE-XlP">
-                                <rect key="frame" x="52" y="216" width="271" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campus-activity-board" translatesAutoresizingMaskIntoConstraints="NO" id="Tyo-ko-B1N">
+                                <rect key="frame" x="0.0" y="83.5" width="375" height="500"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99511484437232489" green="1" blue="0.05377870828512088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tyo-ko-B1N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LxU-aP-M9v"/>
+                            <constraint firstItem="Tyo-ko-B1N" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PC3-W5-STZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Tyo-ko-B1N" secondAttribute="trailing" id="jHh-NH-Zax"/>
+                            <constraint firstItem="Tyo-ko-B1N" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uMn-OT-mbU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -33,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2017-12-15 at 11.25.18 AM" width="866" height="436"/>
+        <image name="campus-activity-board" width="500" height="500"/>
     </resources>
 </document>
