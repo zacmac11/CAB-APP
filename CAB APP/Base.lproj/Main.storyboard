@@ -401,20 +401,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="6" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eU4-FE-hiG">
-                                <rect key="frame" x="0.0" y="244" width="375" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Maryville_university_stock" translatesAutoresizingMaskIntoConstraints="NO" id="CdV-T3-0Gg">
                                 <rect key="frame" x="0.0" y="20" width="375" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7v8-8F-2KI">
+                                <rect key="frame" x="0.0" y="293" width="375" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93600000000000005" blue="0.040000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="Lss-pn-ERA"/>
+                    <connections>
+                        <outlet property="upcomingEventView" destination="7v8-8F-2KI" id="YGN-vk-FWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -429,10 +432,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0zV-ui-shb">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-GH-tXM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Comedy"/>
                                         <connections>
@@ -440,7 +443,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WB-4v-g2q">
-                                        <rect key="frame" x="0.0" y="85.5" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="92.5" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Daytime"/>
                                         <connections>
@@ -448,7 +451,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-z9-pRJ">
-                                        <rect key="frame" x="0.0" y="171" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="185" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Live Performance"/>
                                         <connections>
@@ -456,7 +459,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-yt-IU7">
-                                        <rect key="frame" x="0.0" y="256.5" width="375" height="85"/>
+                                        <rect key="frame" x="0.0" y="277.5" width="375" height="92"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Off Campus "/>
                                         <connections>
@@ -464,7 +467,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-gQ-ox0">
-                                        <rect key="frame" x="0.0" y="341.5" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="369.5" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Weekend Events"/>
                                         <connections>
@@ -472,7 +475,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngn-xf-O1F">
-                                        <rect key="frame" x="0.0" y="427" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="462" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Traditional Events "/>
                                         <connections>
@@ -480,7 +483,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mno-lo-ThS">
-                                        <rect key="frame" x="0.0" y="512.5" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="554.5" width="375" height="92.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="General"/>
                                         <connections>
@@ -518,7 +521,8 @@
         <!--Calander-->
         <scene sceneID="yti-QK-RMp">
             <objects>
-                <viewController title="Calander" id="d3i-xv-GPw" customClass="Calender" customModule="CAB_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVh-hx-87m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Calander" id="d3i-xv-GPw" customClass="CalendarWebViewController" customModule="CAB_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KxI-6Q-END">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,10 +538,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Calander" id="lvs-cC-WCB"/>
                     <connections>
-                        <outlet property="calendarWebView" destination="z6h-Xn-eXj" id="mb6-Hy-pzl"/>
+                        <outlet property="calendarWeb" destination="z6h-Xn-eXj" id="JR7-hu-ZoI"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lVh-hx-87m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656.8" y="34.632683658170919"/>
         </scene>
@@ -616,6 +619,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mpc-QP-fhK"/>
-        <segue reference="scv-Lc-bhf"/>
+        <segue reference="dFT-wy-Y9G"/>
     </inferredMetricsTieBreakers>
 </document>
