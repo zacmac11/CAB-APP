@@ -9,16 +9,15 @@
 import UIKit
 
 class Calender: UITableViewController{
-
-    @IBOutlet weak var calenderCab: UIWebView!
+    @IBOutlet weak var calendarWebView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-calenderCab.scalesPageToFit = true
-        if let webURL = URL(string: "http://maryville.orgsync.com/org/campusactivitiesboard24419/Calendar") {
-            let request = URLRequest(url: webURL, cachePolicy:
-                .useProtocolCachePolicy, timeoutInterval: 60)
-            calenderCab.loadRequest(request)
-        }
+        let url = URL(string: "http://maryville.orgsync.com/org/campusactivitiesboard24419/Calendar")
+        calendarWebView.loadRequest(URLRequest(url: url!))
+        
+    }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,19 +25,19 @@ calenderCab.scalesPageToFit = true
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+func didReceiveMemoryWarning() {
+        
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
@@ -98,4 +97,4 @@ calenderCab.scalesPageToFit = true
     }
     */
 
-}
+
